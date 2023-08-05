@@ -1,0 +1,127 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hrishikesh Majumdar</title>
+    <link rel="stylesheet" href="{%static 'styles.css' %}" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="Container">
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Personal Portfolio</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="/home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/projects">Personal Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/experience">Work Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/education">Education</a>
+              </li>
+              {% comment %} <li class="nav-item">
+                <a class="nav-link" href="/skills">Skills</a>
+              </li> {% endcomment %}
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="main">
+        <div class="CardBody">
+          <div class="card" style="width: 18rem">
+            <img src="{%static 'images/newsdome.png' %}" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">NEWSDOME WEBSITE</h5>
+              <p class="card-text">
+                HTML, CSS, BOOTSTRAP, JAVASCRIPT & REACT JS (03/2023)
+              </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                Created a News Website that uses the News API to fetch the
+                latest news from every category: Science, Technology, Sports,
+                etc.
+              </li>
+            </ul>
+            <div class="card-body">
+              <a href="https://github.com/HrishikeshMajumdar-2004/NewsDome-Site" class="card-link">Github link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img src="{%static 'images/chatapp.png' %}" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">REAL-TIME CHAT APPLICATION</h5>
+              <p class="card-text">
+                HTML, CSS, JAVASCRIPT ,REACT JS & SOCKET.IO(04/2023)
+              </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                Its a scalable Realtime Chatting Application that provides an interface for multiple user chatting at the same time.
+              </li>
+            </ul>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img src="{%static 'images/portfolio.png' %}" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">PERSONAL PORTFOLIO WEBSITE</h5>
+              <p class="card-text">
+                HTML, CSS, BOOTSTRAP, JAVASCRIPT & DJANGO (05/2023)
+              </p>
+            </div>
+            <div class="card-body">
+              <a href="https://github.com/HrishikeshMajumdar-2004/NewsDome-Site" class="card-link">Github link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  </body>
+</html>
